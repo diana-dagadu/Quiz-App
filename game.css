@@ -1,0 +1,120 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border: 0.1rem solid rgba(86, 165, 235, 0.25);
+    background-color: rgb(211, 209, 209);
+}
+
+.choice-prefix {
+    background-color: rgba(86, 165, 235);
+    padding: 1.5rem 2.5rem;
+    /* color: white; */
+    color: white;
+    font-size: 1.5rem;
+}
+
+.choice-text {
+    padding: 2rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 165, 235, 0.5);
+    transform: translateY(-0.2rem);
+    transition: transform 150ms;
+}
+
+.correct {
+    background-color: #28a745;
+}
+
+.incorrect {
+    background-color: #e41d1d;
+}
+
+/* HUD */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progress-bar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid rgb(1, 126, 1);
+    margin-top: 1.5rem;
+}
+
+#progress-bar-full {
+    height: 3.4rem;
+    background-color: rgb(1, 126, 1);
+    width: 0%;
+}
+
+/* LOADER */
+
+#loader {
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid #56a5eb;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite ;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+/* CATEGORY PICKER */
+#category-cont {
+    /* display: flex; */
+    flex-direction: column;
+    width: 75%;
+    height: 50%;
+    font-size: 2rem;
+    align-content: space-around;
+    margin-left: 2rem;
+
+}
+
+label {
+    margin-bottom: 1rem;
+}
+
+select {
+    background-color: rgb(211, 209, 209);
+    color: rgb(61, 134, 243);
+    height: 4rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    /* margin: 1rem;
+    margin-left: 4rem; */
+}
+
+#pick-category-btn {
+    /* margin-left: 2rem; */
+    align-self: center;
+    width: 8rem;
+    height: 4rem;
+}
+
+select option { 
+    font-size: 1.6rem;
+}
+
